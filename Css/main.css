@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* padding: 0; */
+}
+
+body {
+    background: #0079bf;
+}
+
+header {
+    display: inline-flex;
+    background-color: #0c6d9e;
+    font-family: "Open Sans", sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.logo {
+    text-decoration: none;
+    display: inline-flex;
+    float: left;
+    height: 30px;
+    width: 7.5%;
+    background-color: rgba(221, 212, 212, 0.5);
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 1px;
+    min-width: 30px;
+}
+
+.Ta {
+    text-decoration: none;
+}
+
+#fa-tre {
+    margin: 6px;
+}
+
+.logo i,span,.search i {
+    color: #fff;
+}
+
+.search {
+    display: inline-flex;
+    height: 30px;
+    width: 15%;
+    background-color: rgba(221, 212, 212, 0.5);
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+
+.search i {
+    margin: 6px !important;
+}
+
+.input-search {
+    border-radius: 5px;
+    background-color: rgba(221, 212, 212, 0.5);
+    border: none;
+    opacity: .1;
+}
+
+.trello {
+    margin: 7px 30px;
+    width: 7%;
+    position: relative;
+    left: 250px;
+}
+
+div.trello img {
+    width: 90%;
+}
+
+div.user {
+    position: relative;
+    top: 5px;
+    left: 685px;
+    overflow: auto;
+}
+
+.icon {
+    line-height: 30px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: rgba(221, 212, 212, 0.5);
+    font-size: 16px;
+    color: #fff;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#profi {
+    border-radius: 50%;
+}
+
+#profile {
+    width: 100%;
+    border-radius: 50% !important;
+}
+
+/* Main */
+
+main {
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+.star {
+    color: #999;
+    height: 32px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 30px;
+}
+
+.fa-star-o {
+    margin: 0 7px;
+}
+
+.fa-lock {
+    margin: 0 7px;
+}
+
+.titulo {
+    display: inline-flex;
+    font-family: trellicons;
+    font-size: normal;
+    font-weight: 400;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.Menu {
+    float: right;
+}
+
+.insert {
+    background-color: #0c6d9e;
+    width: 25%;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 6px;
+    cursor: pointer
+}
+
+#insert-list h4 {
+    margin-left: 15px;
+}
+
+#form {
+    margin-left: 6px;
+    background-color: #E2E4E6;
+    height: auto;
+    min-height: 30px;
+    padding: 4px;
+    border-radius: 3px;
+    width: 25%;
+}
+
+#tareaInput {
+    box-sizing: border-box;
+    border-color: #aaa;
+    width: 100%;
+    background-color: #E2E4E6;
+    border: 1px solid rgb(104, 105, 105);
+    border-radius: 3px;
+    display: block;
+    padding: 7px;
+}
+
+#btn-agregar {
+    background: #5AAC44;
+    color: #fff;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 8px 4px 0 0;
+    padding: 5px 1pc;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+
+#fo {
+    color: #999;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    width: 30px;
+}
+
+.esconder {
+    display: none;
+}
+
+.titulo-lista {
+    background-color: #CDD2D4;
+    border-radius: 3px 3px 0 0;
+    padding: 7px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para las tareas */
+
+.tarea {
+    display: block;
+    background-color: #E2E4E6;
+    color: #4d4d4d;
+    text-decoration: underline;
+    border-radius: 0 0 3px 3px;
+    font-size: 14px;
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    /* position: relative; */
+    line-height: 18px;
+}
+
+.tarea-titulo {
+    background-color: #CDD2D4;
+    border-radius: 3px 3px 0 0;
+    padding: 7px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
