@@ -9,7 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="Css/main.css">
 
     <body>
 
@@ -45,38 +45,38 @@
         <!-- Main de mi pagina  -->
         <main>
             <!-- Strella y h1 -->
+
             <section>
-                <div class="titulo">
+                <div class="title">
                     <h1>Tablero - Reto de Código</h1>
                     <div class="icon-star">
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                         <i class="fa fa-lock" aria-hidden="true"></i>
                         <span>Privado</span>
-                        <!--::before -->
                     </div>
+
+                    <!-- Menú -->
+                    <nav id="Menu">
+                        <a href="#">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            <span>Mostrar Menú</span>
+                            </a>
+                    </nav>
                 </div>
             </section>
 
-            <!-- Menú -->
-            <section>
-                <nav class="Menu">
-                    <a class="Mostrar" href="#">
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                        <span>Mostrar Menú</span>
-                    </a>
-                </nav>
-            </section>
 
 
             <!-- Tableros -->
             <section>
-                <div class="contenido">
+                <div id="container" class="hide-container"></div>
+                <div>
                     <div class="insert" id="insert-list">
                         <h4>Añadir una lista...</h4>
                     </div>
                     <article>
-                        <form id="form" class="esconder" action="">
-                            <input type="text" id="tareaInput" placeholder="Añadir una lista...">
+                        <form id="form" class="hide" action="">
+                            <textarea type="text" id="taskInput" placeholder="Añadir una lista..."></textarea>
                             <input type="button" class="boton" id="btn-agregar" value="Guardar" onclick="getFocus()">
                             <i id="fo" class="fa fa-times fa-2x list-add-close"></i>
                         </form>

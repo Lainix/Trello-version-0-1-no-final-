@@ -41,7 +41,9 @@ header {
     margin: 6px;
 }
 
-.logo i,span,.search i {
+.logo i,
+span,
+.search i {
     color: #fff;
 }
 
@@ -136,7 +138,7 @@ h1 {
     margin: 0 7px;
 }
 
-.titulo {
+.title {
     display: inline-flex;
     font-family: trellicons;
     font-size: normal;
@@ -146,8 +148,10 @@ h1 {
     padding-left: 10px;
 }
 
-.Menu {
-    float: right;
+#Menu {
+    position: relative;
+    left: 910px;
+    overflow: auto;
 }
 
 .insert {
@@ -156,7 +160,7 @@ h1 {
     height: 50px;
     margin-top: 5px;
     margin-left: 6px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 #insert-list h4 {
@@ -173,7 +177,11 @@ h1 {
     width: 25%;
 }
 
-#tareaInput {
+p {
+    color: black;
+}
+
+#taskInput {
     box-sizing: border-box;
     border-color: #aaa;
     width: 100%;
@@ -205,23 +213,38 @@ h1 {
     width: 30px;
 }
 
-.esconder {
+.hide {
     display: none;
 }
 
-.titulo-lista {
-    background-color: #CDD2D4;
-    border-radius: 3px 3px 0 0;
-    padding: 7px;
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-    font-weight: bold;
+.hide-container {
+    margin-left: 6px;
+    background-color: #E2E4E6;
+    height: auto;
+    min-height: 30px;
+    padding: 4px;
+    border-radius: 3px;
+    width: 25%;
 }
 
-/* Estilos para las tareas */
+#container {
+    display: none;
+}
 
-.tarea {
+.add {
+    background: #5AAC44;
+    color: #fff;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 8px 4px 0 0;
+    padding: 5px 1pc;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    bottom: 0;
+}
+
+.taskA {
     display: block;
     background-color: #E2E4E6;
     color: #4d4d4d;
@@ -230,15 +253,6 @@ h1 {
     font-size: 14px;
     flex: 0 0 auto;
     padding: 8px 10px;
-    /* position: relative; */
     line-height: 18px;
 }
 
-.tarea-titulo {
-    background-color: #CDD2D4;
-    border-radius: 3px 3px 0 0;
-    padding: 7px;
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-}
