@@ -65,6 +65,28 @@ button.addEventListener('click', function(){
         event.target.appendChild(secondForm);
         buttonSecond.disabled = false;        
 
+
+        /* Versión 0.0.4 */
+        textareaSecond.focus();      
+        buttonSecond.addEventListener('click', function(event) {
+            event.preventDefault();
+            var commentS = document.getElementById('taskInput').value; 
+            document.getElementById('taskInput').value = '';
+            var newtitle = document.createTextNode(commentS);
+            // var newtitle = document.createTextNode(buttonSecond.previousElementSibling.value); //La propiedad previousElementSibling devuelve el elemento anterior del elemento especificado, en el mismo nivel de árbol.
+            var newDiv = document.createElement('div');
+            newDiv.classList.add('divTask');
+            newDiv.appendChild(newtitle);
+            var parent = event.target.parentElement;
+
+
+            /* Versión 0.0.5 */
+            parent.classList.toggle('hide');
+            parent.parentElement.appendChild(newDiv);
+            newDiv.parentElement.appendChild(parent.previousElementSibling);
+            parent.parentElement.lastElementChild.classList.toggle('taskA');
+    
+          });     
     });
 });
 
