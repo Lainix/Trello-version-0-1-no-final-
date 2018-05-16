@@ -45,6 +45,27 @@ button.addEventListener('click', function(){
         alert('Debes ingresar un mensaje');
         return false;
     };
+
+
+    /* Versión 0.0.3 */
+    a.addEventListener('click', function (event) {
+        event.preventDefault();
+        a.classList.toggle("taskA");
+
+        var secondForm = document.createElement("form");
+        var textareaSecond = document.createElement('textarea');
+        textareaSecond.classList.add('listInput');
+
+        var buttonSecond = document.createElement('input');
+        buttonSecond.setAttribute('value', 'Añadir');
+        buttonSecond.setAttribute('type', 'submit');
+        buttonSecond.classList.add('add');
+        secondForm.appendChild(textareaSecond);
+        secondForm.appendChild(buttonSecond);
+        event.target.appendChild(secondForm);
+        buttonSecond.disabled = false;        
+
+    });
 });
 
 
